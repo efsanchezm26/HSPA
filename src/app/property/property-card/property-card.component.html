@@ -4,7 +4,9 @@
 
     <div class="card-img-wrapper">
     <!--<img class="propImg" src="assets/Images/Imagen1.jpg">-->
-    <img class="card-img-top" src="assets/Images/Imagen1.jpg">
+     <!--<img class="card-img-top" src="assets/Images/Imagen1.jpg">-->
+     <img *ngIf="property_name.Image" class="card-img-top" src="assets/Images/{{property_name.Image}}.jpg">
+     <img *ngIf="!property_name.Image" class="card-img-top" src="assets/Images/Imagen1.jpg">
     <ul class="list-inline text-center member-icons animate">
       <li class="list-inline-item">
         <button class="btn btn-primary" routerLink="/property-detail/{{property_name.Id}}"><i class="fa fa-edit"></i></button>

@@ -17,12 +17,20 @@ public propertyId: number=0;
     this.propertyId =+this.route.snapshot.params['id'];
     console.log('Probando tomar el valor')
     console.log(this.propertyId)
+
+    this.route.params.subscribe(
+      (params)=>{
+        this.propertyId= +params['id'];
+      });
   }
 
   onSelectNext(){
     this.propertyId += 1;
 
     this.router.navigate(['property-detail',this.propertyId]) ;
+
+    //this.router.navigate(['property-detail',this.propertyId],{relativeTo:this.route}) ;
+
   }
 
 }

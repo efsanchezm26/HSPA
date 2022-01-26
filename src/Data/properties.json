@@ -1,33 +1,43 @@
 [
   {
   "Id": 1,
+  "SellRent":1,
   "Name": "Birla house",
   "Type": "House",
-  "Price": 12000
+  "Price": 12000,
+  "Image":"Spa1"
 },
 {
   "Id": 2,
+  "SellRent":1,
   "Name": "Birla house",
   "Type": "House",
-  "Price": 12000
+  "Price": 12000,
+  "Image":"Spa2"
 },
 {
   "Id": 3,
+  "SellRent":1,
   "Name": "Birla house",
   "Type": "House",
-  "Price": 12000
+  "Price": 12000,
+  "Image":"Spa3"
 },
 {
   "Id": 4,
-  "Name": "Birla house",
+  "SellRent":1,
+  "Name": "rent house",
   "Type": "House",
-  "Price": 12000
+  "Price": 12000,
+  "Image":"Spa4"
 },
 {
   "Id": 5,
+  "SellRent":2,
   "Name": "angie house",
   "Type": "House",
-  "Price": 12000
+  "Price": 12000,
+  "Image":"Spa5"
 }
 
 ]
