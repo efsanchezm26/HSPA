@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HousingService } from 'src/services/housing.service';
 import { IProperty } from '../property-list/IProperty';
@@ -11,6 +12,7 @@ import { IProperty } from '../property-list/IProperty';
 export class AddPropertyComponent implements OnInit {
   propertieshttp: Array<IProperty>=[];
   SellRent=1
+  //@ViewChild('Form') addPropertyForm:NgForm;
 
   constructor(private route:ActivatedRoute, private router:Router,private housinService: HousingService) { }
 
@@ -36,6 +38,12 @@ export class AddPropertyComponent implements OnInit {
 
   onBack(){
     this.router.navigate(['/']);
+  }
+
+  onSubmit(Form:NgForm){
+console.log('Hola');
+console.log(Form);
+//console.log(this.addPropertyForm); // No funciono
   }
 
 }
